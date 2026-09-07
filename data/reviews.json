@@ -1,0 +1,130 @@
+[
+  {
+    "review_id": "REV-001",
+    "case_id": "NET-001",
+    "ai_diagnosis": {
+      "case_id": "NET-001",
+      "likely_fault": "DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN.",
+      "osi_layer": "Layer 3",
+      "confidence": "low",
+      "evidence_used": [
+        "DEMO MODE: no genuine evidence used; source is simulated.",
+        "Symptom used: Host on VLAN 10 cannot ping the server that is also expected to be in VLAN 10. Other hosts on the same access switch reach the server fine."
+      ],
+      "recommended_next_command": "show running-config   (DEMO placeholder; replace with a real confirmatory command during live mode)",
+      "suggested_fix": [
+        "DEMO MODE: this is a simulated suggestion and not a verified fix.",
+        "Run live mode (set OPENAI_API_KEY) to obtain a genuine diagnosis."
+      ],
+      "reasoning_summary": "DEMO MODE: deterministic placeholder produced without a model. Not a real AI reasoning summary.",
+      "uncertainty_or_limitations": "DEMO MODE: simulated output. show_outputs present=False. This must not be presented as genuine AI evidence."
+    },
+    "ai_meta": {
+      "source": "demo",
+      "case_id": "NET-001",
+      "needs_human_review": true
+    },
+    "review_status": "accepted",
+    "final_diagnosis": {
+      "case_id": "NET-001",
+      "likely_fault": "DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN.",
+      "osi_layer": "Layer 3",
+      "confidence": "low",
+      "evidence_used": [
+        "DEMO MODE: no genuine evidence used; source is simulated.",
+        "Symptom used: Host on VLAN 10 cannot ping the server that is also expected to be in VLAN 10. Other hosts on the same access switch reach the server fine."
+      ],
+      "recommended_next_command": "show running-config   (DEMO placeholder; replace with a real confirmatory command during live mode)",
+      "suggested_fix": [
+        "DEMO MODE: this is a simulated suggestion and not a verified fix.",
+        "Run live mode (set OPENAI_API_KEY) to obtain a genuine diagnosis."
+      ],
+      "reasoning_summary": "DEMO MODE: deterministic placeholder produced without a model. Not a real AI reasoning summary.",
+      "uncertainty_or_limitations": "DEMO MODE: simulated output. show_outputs present=False. This must not be presented as genuine AI evidence."
+    },
+    "correction_reason": null,
+    "reviewer_notes": "Approved by human reviewer.",
+    "created_at": "2026-09-07T16:38:05.325835+00:00",
+    "reviewed_at": "2026-09-07T16:38:06.661839+00:00"
+  },
+  {
+    "review_id": "REV-002",
+    "case_id": "NET-002",
+    "ai_diagnosis": {
+      "case_id": "NET-002",
+      "likely_fault": "DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN.",
+      "osi_layer": "Layer 3",
+      "confidence": "low",
+      "evidence_used": [
+        "DEMO MODE: no genuine evidence used; source is simulated.",
+        "Symptom used: Hosts on different VLANs cannot ping each other. Hosts within the same VLAN can ping each other successfully."
+      ],
+      "recommended_next_command": "show running-config   (DEMO placeholder; replace with a real confirmatory command during live mode)",
+      "suggested_fix": [
+        "DEMO MODE: this is a simulated suggestion and not a verified fix.",
+        "Run live mode (set OPENAI_API_KEY) to obtain a genuine diagnosis."
+      ],
+      "reasoning_summary": "DEMO MODE: deterministic placeholder produced without a model. Not a real AI reasoning summary.",
+      "uncertainty_or_limitations": "DEMO MODE: simulated output. show_outputs present=False. This must not be presented as genuine AI evidence."
+    },
+    "ai_meta": {
+      "source": "demo",
+      "case_id": "NET-002",
+      "needs_human_review": true
+    },
+    "review_status": "edited",
+    "final_diagnosis": {
+      "case_id": "NET-002",
+      "likely_fault": "Inter-VLAN routing is not correctly configured, preventing communication between the required VLANs.",
+      "osi_layer": "Layer 1",
+      "confidence": "low",
+      "evidence_used": [
+        "DEMO MODE: no genuine evidence used; source is simulated.",
+        "Symptom used: Hosts on different VLANs cannot ping each other. Hosts within the same VLAN can ping each other successfully."
+      ],
+      "recommended_next_command": "show running-config   (DEMO placeholder; replace with a real confirmatory command during live mode)",
+      "suggested_fix": [
+        "DEMO MODE: this is a simulated suggestion and not a verified fix.",
+        "Run live mode (set OPENAI_API_KEY) to obtain a genuine diagnosis."
+      ],
+      "reasoning_summary": "DEMO MODE: deterministic placeholder produced without a model. Not a real AI reasoning summary.",
+      "uncertainty_or_limitations": "DEMO MODE: simulated output. show_outputs present=False. This must not be presented as genuine AI evidence."
+    },
+    "correction_reason": "The diagnosis is too general.",
+    "reviewer_notes": "Edited by human reviewer.",
+    "created_at": "2026-09-07T16:38:37.049368+00:00",
+    "reviewed_at": "2026-09-07T16:39:16.500543+00:00"
+  },
+  {
+    "review_id": "REV-003",
+    "case_id": "NET-003",
+    "ai_diagnosis": {
+      "case_id": "NET-003",
+      "likely_fault": "DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN.",
+      "osi_layer": "Layer 3",
+      "confidence": "low",
+      "evidence_used": [
+        "DEMO MODE: no genuine evidence used; source is simulated.",
+        "Symptom used: A newly added PC has no connectivity even though it was configured with a valid IP address. The PC cannot reach the gateway or any other device."
+      ],
+      "recommended_next_command": "show running-config   (DEMO placeholder; replace with a real confirmatory command during live mode)",
+      "suggested_fix": [
+        "DEMO MODE: this is a simulated suggestion and not a verified fix.",
+        "Run live mode (set OPENAI_API_KEY) to obtain a genuine diagnosis."
+      ],
+      "reasoning_summary": "DEMO MODE: deterministic placeholder produced without a model. Not a real AI reasoning summary.",
+      "uncertainty_or_limitations": "DEMO MODE: simulated output. show_outputs present=False. This must not be presented as genuine AI evidence."
+    },
+    "ai_meta": {
+      "source": "demo",
+      "case_id": "NET-003",
+      "needs_human_review": true
+    },
+    "review_status": "rejected",
+    "final_diagnosis": null,
+    "correction_reason": "The data that is available is insufficient",
+    "reviewer_notes": "Rejected by human reviewer.",
+    "created_at": "2026-09-07T16:39:49.437071+00:00",
+    "reviewed_at": "2026-09-07T16:40:27.517202+00:00"
+  }
+]

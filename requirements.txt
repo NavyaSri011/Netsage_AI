@@ -1,0 +1,26 @@
+# NetSage AI - Dependencies
+
+# Install using:
+
+# pip install -r requirements.txt
+
+# The core features of this project use only Python's standard library.
+
+# These packages are needed for optional AI and dashboard features.
+
+# AI integration
+
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Dashboard charts
+
+matplotlib>=3.7.0
+
+# Optional: can be used later for additional data analysis
+
+# pandas>=2.0.0
+
+# Optional: can be used for automated testing
+
+# pytest>=7.0.0

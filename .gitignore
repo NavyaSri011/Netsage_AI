@@ -1,0 +1,56 @@
+# ============================================================
+# NetSage AI — .gitignore
+# ============================================================
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Environment variable files (NEVER commit secrets)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated output files
+dashboard/*.png
+dashboard/*.jpg
+dashboard/*.pdf
+dashboard/*.html
+dashboard/*.xlsx
+dashboard/*.csv
+
+# Sample data output (keep input, ignore generated)
+sample_data/output/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+temp/
+tmp/
+*.tmp

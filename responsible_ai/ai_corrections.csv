@@ -1,0 +1,29 @@
+# ============================================================
+# NetSage AI — Responsible AI Log
+# ============================================================
+# Purpose:
+#   Record cases where an AI diagnosis required human correction.
+#
+# Rows are generated ONLY from genuine human review records
+# (data/reviews.json). Nothing is fabricated.
+#
+# Columns:
+#   case_id                  — Reference to the case in data/cases.csv
+#   ai_diagnosis             — What the AI diagnosed (brief)
+#   human_decision           — Accepted / Edited / Rejected
+#   correction_made          — What the human changed
+#   reason_ai_was_incorrect  — Why the AI was wrong/incomplete
+#   final_approved_diagnosis — The human-approved final diagnosis
+#   lesson_learned           — What the correction taught us
+#   review_id                — Reference to the review in data/reviews.json
+#   reviewer_notes           — Notes left by the human reviewer
+#   reviewed_at              — ISO timestamp of the human decision
+#
+# RULES:
+#   accepted = agreement (never logged); pending = excluded;
+#   edited/rejected = corrections (logged).
+#   Regenerating this log does not create duplicates.
+# ============================================================
+case_id,ai_diagnosis,human_decision,correction_made,reason_ai_was_incorrect,final_approved_diagnosis,lesson_learned,review_id,reviewer_notes,reviewed_at
+NET-002,"DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN. (Layer 3; confidence=low)",Edited,"likely fault: 'DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN.' -> 'Inter-VLAN routing is not correctly configured, preventing communication between the required VLANs.' | osi layer: 'Layer 3' -> 'Layer 1'",The diagnosis is too general.,"Inter-VLAN routing is not correctly configured, preventing communication between the required VLANs. (Layer 1; confidence=low)",Lesson: the AI root-cause hypothesis required human correction; the AI misclassified the problem OSI layer.,REV-002,Edited by human reviewer.,2026-09-07T16:39:16.500543+00:00
+NET-003,"DEMO (simulated, not real AI output). Hypothesis placeholder based on concept_tag=VLAN. (Layer 3; confidence=low)",Rejected,AI diagnosis rejected; no alternative final diagnosis recorded.,The data that is available is insufficient,none,Lesson: the AI root-cause hypothesis required human correction; the AI misclassified the problem OSI layer; the AI confidence estimate did not match human judgment; the AI suggested fix did not address the verified root cause.,REV-003,Rejected by human reviewer.,2026-09-07T16:40:27.517202+00:00
